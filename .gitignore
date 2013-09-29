@@ -17,5 +17,7 @@
 /log/*.log
 /tmp
 
+/vendor/ruby
+
 config/database.yml
 .env
