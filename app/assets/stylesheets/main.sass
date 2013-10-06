@@ -1,0 +1,105 @@
+$grey: #777
+$darkgrey: #444
+$lightgrey: #ccc
+
+$primary-font: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif
+$secondary-font: Varela Round, arial, sans-serif
+
+%base-typeface
+  font-family: $primary-font
+  color: $grey
+  font-size: 14px
+  line-height: 1.8em
+  text-decoration: none
+  font-weight: normal
+  font-style: normal
+
+%secondary-typeface
+  font-family: $secondary-font
+  color: $darkgrey
+  font-size: 16px
+  line-height: 1.8em
+  text-decoration: none
+  font-weight: normal
+  font-style: normal
+
+html, body
+  height: 100%
+
+body
+  @extend %base-typeface
+
+h1, h2, h3, h4
+  @extend %secondary-typeface
+
+h1
+  font-size: 32px
+
+.hero-cover
+  height: 100%
+
+.hero
+  background: image-url('bg.jpg')
+  background-position: top left
+  background-size: cover
+  background-attachment: fixed
+  background-repeat: no-repeat
+  height: 100%
+  width: 100%
+  position: relative
+
+.hero__content
+  margin: auto
+  position: fixed
+  top: 0
+  left: 0
+  bottom: 0
+  right: 0
+  height: 400px
+  width: 800px
+  padding: 90px 0
+  background: rgba(0, 0, 0, 0.6)
+  text-align: center
+
+.main
+  background: #fff
+  position: relative
+  padding: 100px
+  min-height: 100%
+  background: #fff
+  @include clearfix
+
+.callout
+  text-align: center
+  margin-bottom: 40px
+  color: $darkgrey
+  &:after
+    content: ""
+    width: 100px
+    height: 5px
+    margin: 10px auto
+    display: block
+    background: $darkgrey
+
+.title
+  &:before
+    content: ""
+    height: 5px
+    margin: 10px auto
+    display: block
+    background: $darkgrey
+
+.thumbnail__image
+  max-width: 100%
+  margin-bottom: 20px
+  padding: 3px
+  border: 1px solid $lightgrey
+
+.thumbnail__title
+  @extend %secondary-typeface
+  letter-spacing: 3px
+  text-transform: uppercase
+
+form
+  @extend %secondary-typeface
+  color: inherit
