@@ -1,13 +1,28 @@
 <div class="hero">
   <div class="hero__content">
-    <img class="hero__img" src="<%= image_path('logo_white_large.png') %>"/>
+    <a class="hero__link" href="#main">
+      <img class="hero__img" src="<%= image_path('logo_white_large.png') %>"/>
+    </a>
+
+    <nav>
+      <ul class="nav">
+        <li class="nav__item">
+          <a class="nav__link" href="#main">about</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="#signup">signup</a>
+        </li>
+      </ul>
+    </nav>
   </div>
 </div>
 
 <section class="main">
+  <a name="main"></a>
+
   <h1 class="callout">music and beyond</h1>
 
-  <div class="row">
+  <section class="row">
     <div class="col-lg-8 col-lg-offset-2">
       <div class="row">
         <div class="thumbnail col-lg-4">
@@ -33,10 +48,13 @@
         </div>
       </div>
     </div>
-  </div>
+  </section>
 
   <h1 class="callout">sign up for exclusive events</h1>
-  <div class="row">
+
+  <a name="signup"></a>
+
+  <section class="row">
     <form class="form-horizontal col-lg-4 col-lg-offset-4" role="form">
       <div class="row">
         <div class="form-group">
@@ -58,6 +76,6 @@
         </div>
       </div>
     </form>
-  </div>
+  </section>
 
 </section>
