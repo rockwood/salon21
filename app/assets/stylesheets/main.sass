@@ -1,6 +1,7 @@
 $grey: #777
 $darkgrey: #444
 $lightgrey: #ccc
+$green: #a7d2d1
 
 $primary-font: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif
 $secondary-font: Varela Round, arial, sans-serif
@@ -19,6 +20,8 @@ $secondary-font: Varela Round, arial, sans-serif
   color: $darkgrey
   font-size: 16px
   line-height: 1.8em
+  letter-spacing: 3px
+  text-transform: uppercase
   text-decoration: none
   font-weight: normal
   font-style: normal
@@ -31,9 +34,6 @@ body
 
 h1, h2, h3, h4
   @extend %secondary-typeface
-
-h1
-  font-size: 32px
 
 .hero-cover
   height: 100%
@@ -63,31 +63,37 @@ h1
 
 .nav
   display: block
-  margin: 20px 0
+  position: fixed
+  top: 30px
+  left: 30px
+  margin: 0
   padding: 0
 
 .nav__item
   list-style: none
-  display: inline-block
-  margin: 0 10px
+  margin-bottom: 20px
 
 .nav__link
   font-size: 16px
-  color: $lightgrey
+  color: $darkgrey
   &:hover
     color: $grey
 
 .main
   background: #fff
   position: relative
-  padding: 100px
+  padding: 60px
   min-height: 100%
   background: #fff
   @include clearfix
 
-.callout
+.header
   text-align: center
   margin-bottom: 40px
+
+.callout
+  text-align: center
+  margin: 40px 0
   color: $darkgrey
   &:after
     content: ""
@@ -113,8 +119,6 @@ h1
 
 .thumbnail__title
   @extend %secondary-typeface
-  letter-spacing: 3px
-  text-transform: uppercase
 
 form
   @extend %secondary-typeface
