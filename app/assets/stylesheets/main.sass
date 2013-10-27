@@ -5,6 +5,7 @@ $green: #a7d2d1
 
 $primary-font: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif
 $secondary-font: Varela Round, arial, sans-serif
+$font-size-base: 16px
 
 %base-typeface
   font-family: $primary-font
@@ -61,10 +62,13 @@ h1, h2, h3, h4
   background: rgba(0, 0, 0, 0.6)
   text-align: center
 
+.hero__caption
+  color: #fff
+
 .nav
   display: block
   position: fixed
-  top: 30px
+  top: 70px
   left: 30px
   margin: 0
   padding: 0
@@ -119,3 +123,17 @@ h1, h2, h3, h4
 
 .thumbnail__title
   @extend %secondary-typeface
+
+@media (max-width: $screen-xs-max)
+  .hero__content
+    width: 100%
+    left: 0
+
+  .hero__img
+    max-width: 80%
+
+  .nav
+    display: none
+
+  .thumbnail
+    text-align: center
