@@ -1,81 +1,8 @@
 <div class="hero">
   <div class="hero__content">
-    <a class="hero__link" href="#main">
+    <a class="hero__link" href="<%= page_path('about') %>">
       <img class="hero__img" src="<%= image_path('logo_white_large.png') %>"/>
     </a>
     <p class="hero__caption">Intimate classical music concerts in unexpected places</p>
   </div>
 </div>
-
-<section class="main">
-
-  <a name="main"></a>
-
-  <div class="header">
-    <img class="header__img" src="<%= image_path('logo_black.png') %>"/>
-  </div>
-
-  <section class="row">
-      <div class="thumbnail col-lg-4 col-md-4">
-        <img class="thumbnail__image" src="<%= image_path('thumb1.png') %>"/>
-        <h3 class="thumbnail__title">Party Like Chopin</h3>
-        <p class="thumbnail__caption">
-          In the 19th century, composers like Chopin and Mendelssohn performed world-class piano concerts right in people’s living rooms. We’re updating these European salons for the 21st century with intimate pop-up concerts around the city.
-        </p>
-      </div>
-      <div class="thumbnail col-lg-4 col-md-4">
-        <img class="thumbnail__image" src="<%= image_path('thumb2.png') %>"/>
-        <h3 class="thumbnail__title">Eat, Drink, Listen</h3>
-        <p class="thumbnail__caption">
-          We believe classical music is for everyone, so we’ve stripped out any stuffiness or pretension. Enjoy wine, food and friends while you experience an outstanding classical piano performance.
-        </p>
-      </div>
-      <div class="thumbnail col-lg-4 col-md-4">
-        <img class="thumbnail__image" src="<%= image_path('thumb3.png') %>"/>
-        <h3 class="thumbnail__title">Mingle With Musicians</h3>
-        <p class="thumbnail__caption">
-          You won’t find any stages at Salon 21. We break down the barriers between the audience and musicians, so you can enjoy a 45-minute concert up close and personal. Then mingle with the musicians as you expand your ideas about music.
-        </p>
-      </div>
-  </section>
-
-  <h1 class="callout">sign up for exclusive events</h1>
-
-  <a name="signup"></a>
-
-  <section class="row">
-    <form class="form-horizontal col-lg-4 col-lg-offset-4" role="form">
-      <div class="row">
-        <div class="form-group">
-          <label class="col-lg-2 control-label" for="signup-form__name">name</label>
-          <div class="col-lg-10">
-            <input type="email" class="form-control" id="signup-form__name" placeholder="name"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <label class="col-lg-2 control-label" for="signup-form__email">email</label>
-          <div class="col-lg-10">
-            <input type="email" class="form-control" id="signup-form__email" placeholder="email"/>
-          </div>
-        </div>
-        <div class="form-group">
-          <div class="col-lg-offset-2 col-lg-10">
-            <button type="submit" class="btn btn-default">Sign up</button>
-          </div>
-        </div>
-      </div>
-    </form>
-  </section>
-
-</section>
-
-<nav>
-  <ul class="nav">
-    <li class="nav__item">
-      <a class="nav__link" href="#main">about</a>
-    </li>
-    <li class="nav__item">
-      <a class="nav__link" href="#signup">signup</a>
-    </li>
-  </ul>
-</nav>

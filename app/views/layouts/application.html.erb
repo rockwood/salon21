@@ -15,6 +15,17 @@
 </head>
 <body>
 
+  <nav class="top-bar">
+    <ul class="nav">
+      <li class="nav__item">
+        <a class="nav__link" href="<%= page_path("about") %>">about</a>
+      </li>
+      <li class="nav__item">
+        <a class="nav__link" href="<%= page_path("signup") %>">signup</a>
+      </li>
+    </ul>
+  </nav>
+
   <%= yield %>
 
 </body>

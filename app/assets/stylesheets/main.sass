@@ -1,4 +1,4 @@
-$grey: #777
+$grey: #999
 $darkgrey: #444
 $lightgrey: #ccc
 $green: #a7d2d1
@@ -10,7 +10,7 @@ $font-size-base: 16px
 %base-typeface
   font-family: $primary-font
   color: $grey
-  font-size: 14px
+  font-size: 16px
   line-height: 1.8em
   text-decoration: none
   font-weight: normal
@@ -18,8 +18,8 @@ $font-size-base: 16px
 
 %secondary-typeface
   font-family: $secondary-font
-  color: $darkgrey
-  font-size: 16px
+  color: $grey
+  font-size: 15px
   line-height: 1.8em
   letter-spacing: 3px
   text-transform: uppercase
@@ -32,6 +32,11 @@ html, body
 
 body
   @extend %base-typeface
+  background: image-url('bg.jpg')
+  background-position: center center
+  background-size: cover
+  background-attachment: fixed
+  background-repeat: no-repeat
 
 h1, h2, h3, h4
   @extend %secondary-typeface
@@ -40,13 +45,6 @@ h1, h2, h3, h4
   height: 100%
 
 .hero
-  background: image-url('bg.jpg')
-  background-position: center center
-  background-size: cover
-  background-attachment: fixed
-  background-repeat: no-repeat
-  height: 100%
-  width: 100%
   position: relative
 
 .hero__content
@@ -65,30 +63,41 @@ h1, h2, h3, h4
 .hero__caption
   color: #fff
 
-.nav
+.top-bar
   display: block
   position: fixed
-  top: 70px
-  left: 30px
-  margin: 0
+  top: 0
+  width: 100%
+  background: #000
+  z-index: 100
+
+.nav
+  width: 960px
+  margin: 0 auto
   padding: 0
 
 .nav__item
   list-style: none
-  margin-bottom: 20px
+  display: inline-block
+  padding: 10px 20px
 
 .nav__link
-  font-size: 16px
-  color: $darkgrey
+  @extend %secondary-typeface
+  font-size: 14px
+  color: $green
   &:hover
     color: $grey
+    text-decoration: none
 
 .main
-  background: #fff
   position: relative
   padding: 60px
   min-height: 100%
-  background: #fff
+  width: 960px
+  margin: 100px auto
+  background: rgba(0, 0, 0, 0.7)
+  color: #fff
+
   @include clearfix
 
 .header
@@ -98,7 +107,7 @@ h1, h2, h3, h4
 .callout
   text-align: center
   margin: 40px 0
-  color: $darkgrey
+  @extend %secondary-typeface
   &:after
     content: ""
     width: 100px
