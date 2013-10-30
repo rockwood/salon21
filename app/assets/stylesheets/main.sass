@@ -93,7 +93,7 @@ h1, h2, h3, h4
   position: relative
   padding: 60px
   min-height: 100%
-  width: 960px
+  max-width: 960px
   margin: 100px auto
   background: rgba(0, 0, 0, 0.7)
   color: #fff
@@ -124,9 +124,6 @@ h1, h2, h3, h4
     display: block
     background: $darkgrey
 
-.thumbnail
-  text-align: center
-
 .thumbnail__image
   max-width: 100%
   margin-bottom: 20px
@@ -136,7 +133,7 @@ h1, h2, h3, h4
 .thumbnail__title
   @extend %secondary-typeface
 
-@media (max-width: $screen-xs-max)
+@media (max-width: $screen-md-max)
   .hero__content
     width: 100%
     left: 0
@@ -149,4 +146,8 @@ h1, h2, h3, h4
 
   .nav
     display: none
+
+  .thumbnail
+    max-width: 350px
+    margin: 0 auto
 
