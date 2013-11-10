@@ -15,22 +15,33 @@
 </head>
 <body>
 
-  <nav class="top-bar">
-    <ul class="nav">
-      <li class="nav__item nav__item--image">
-        <a class="nav__link" href="<%= root_path %>">
-          <img class="nav__img" src="<%= image_path('logo_letter.png') %>"/>
-        </a>
-      </li>
+  <div class="top-bar">
+    <nav class="top-bar__nav">
+      <ul class="nav nav--primary">
+        <li class="nav__item nav__item--image">
+          <a class="nav__link" href="<%= root_path %>">
+            <img class="nav__img" src="<%= image_path('logo_letter.png') %>"/>
+          </a>
+        </li>
 
-      <li class="nav__item">
-        <a class="nav__link" href="<%= page_path("about") %>">about</a>
-      </li>
-      <li class="nav__item">
-        <a class="nav__link" href="<%= page_path("signup") %>">signup</a>
-      </li>
-    </ul>
-  </nav>
+        <li class="nav__item">
+          <a class="nav__link" href="<%= page_path("about") %>">about</a>
+        </li>
+        <li class="nav__item">
+          <a class="nav__link" href="<%= page_path("signup") %>">signup</a>
+        </li>
+      </ul>
+
+      <ul class="nav nav--secondary">
+        <li class="nav__item nav__item--icon">
+          <a class="nav__icon" href="#facebook"><i class="fa fa-facebook-square"></i></a>
+        </li>
+        <li class="nav__item nav__item--icon">
+          <a class="nav__icon" href="#twitter"><i class="fa fa-twitter-square"></i></a>
+        </li>
+      </ul>
+    </nav>
+  </div>
 
   <%= yield %>
 

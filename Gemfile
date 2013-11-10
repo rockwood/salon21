@@ -12,6 +12,7 @@ gem 'coffee-rails', '~> 4.0.0'
 gem 'jquery-rails'
 gem 'high_voltage'
 gem 'bootstrap-sass-rails'
+gem 'font-awesome-rails'
 
 group :production do
   gem 'rails_12factor'
