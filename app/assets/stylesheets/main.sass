@@ -3,13 +3,12 @@ $darkgrey: #444
 $lightgrey: #ccc
 $green: #a7d2d1
 
-$primary-font: Baskerville, "Baskerville Old Face", "Hoefler Text", Garamond, "Times New Roman", serif
+$primary-font: "Calisto MT", "Bookman Old Style", Bookman, "Goudy Old Style", Garamond, "Hoefler Text", "Bitstream Charter", Georgia, serif
 $secondary-font: Varela Round, arial, sans-serif
 $font-size-base: 16px
 
 %base-typeface
   font-family: $primary-font
-  color: $grey
   font-size: 16px
   line-height: 1.8em
   text-decoration: none
@@ -18,7 +17,6 @@ $font-size-base: 16px
 
 %secondary-typeface
   font-family: $secondary-font
-  color: $grey
   font-size: 15px
   line-height: 1.8em
   letter-spacing: 3px
@@ -62,6 +60,8 @@ h1, h2, h3, h4
 
 .hero__caption
   color: #fff
+  font-size: 17px
+  letter-spacing: 5px
 
 .top-bar
   display: block
@@ -76,7 +76,6 @@ h1, h2, h3, h4
   width: 960px
   margin: 0 auto
   padding: 0
-
 
 .nav__item
   list-style: none
@@ -112,6 +111,7 @@ h1, h2, h3, h4
 
 .callout
   text-align: center
+  color: $green
   margin: 40px 0
   @extend %secondary-typeface
   &:after
@@ -120,7 +120,7 @@ h1, h2, h3, h4
     height: 5px
     margin: 10px auto
     display: block
-    background: $darkgrey
+    background: $green
 
 .title
   &:before
@@ -138,6 +138,7 @@ h1, h2, h3, h4
 
 .thumbnail__title
   @extend %secondary-typeface
+  color: $green
 
 @media (max-width: $screen-md-max)
   .hero__content
