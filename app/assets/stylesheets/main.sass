@@ -36,8 +36,17 @@ body
   background-attachment: fixed
   background-repeat: no-repeat
 
+a
+  color: $green
+  &:hover
+    color: lighten($green, 20%)
+
 h1, h2, h3, h4
   @extend %secondary-typeface
+
+.form-horizontal .control-label
+  padding-top: 2px
+  font-weight: normal
 
 .hero-cover
   height: 100%
